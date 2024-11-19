@@ -1,9 +1,39 @@
-import { Text, View } from "react-native";
+import React, { useState } from "react";
+import {
+	Button,
+	SafeAreaView,
+	StyleSheet,
+	Text,
+	TextInput
+} from "react-native";
 
-export default function Index() {
+export default function App() {
+	const [taps, setTaps] = useState(0);
+	const [text, setText] = useState("");
 	return (
-		<View className="flex-1 items-center justify-center">
-			<Text>Edit app/index.tsx to edit this screen.</Text>
-		</View>
+		<SafeAreaView style={styles.container}>
+			<Button title="Add one" onPress={() => setTaps(taps + 1)} />
+			<Button
+				title="Add ten"
+				testID="add_ten"
+				onPress={() => setTaps(taps + 10)}
+			/>
+			<Text>Number of taps: {taps}</Text>
+			<TextInput
+				testID="text_input"
+				placeholder="Change me!"
+				onChangeText={setText}
+			/>
+			<Text>You typed: {text}</Text>
+		</SafeAreaView>
 	);
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: "#fff",
+		alignItems: "center",
+		justifyContent: "center"
+	}
+});
