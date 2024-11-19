@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json.schemastore.org/prettierrc",
+	"plugins": [
+		"prettier-plugin-tailwindcss",
+		"@ianvs/prettier-plugin-sort-imports"
+	],
+	"tailwindFunctions": ["cn"],
+	"useTabs": true,
+	"singleQuote": false,
+	"trailingComma": "none",
+	"importOrder": [
+		"<TYPES>",
+		"",
+		"^(react/(.*)$)|^(react$)",
+		"<THIRD_PARTY_MODULES>",
+		"^@/components/(.*)$",
+		"^@/components/ui/(.*)$"
+	]
+}
