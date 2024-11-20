@@ -5,7 +5,9 @@
 		"baseUrl": "./",
 		"paths": {
 			"@/*": ["src/*"]
-		}
+		},
+		"resolveJsonModule": true,
+		"types": ["i18next/i18next.d.ts"]
 	},
 	"include": [
 		"src/**/*.ts",
