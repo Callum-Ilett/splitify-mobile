@@ -7,8 +7,7 @@
 			"@/*": ["src/*"],
 			"react-native/View": ["@/components/ui/Text"]
 		},
-		"resolveJsonModule": true,
-		"types": ["i18next/i18next.d.ts"]
+		"resolveJsonModule": true
 	},
 	"include": [
 		"src/**/*.ts",
@@ -17,6 +16,7 @@
 		"**/*.tsx",
 		".expo/types/**/*.ts",
 		"expo-env.d.ts",
-		"nativewind-env.d.ts"
+		"nativewind-env.d.ts",
+		"env.d.ts"
 	]
 }
