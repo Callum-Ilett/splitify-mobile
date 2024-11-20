@@ -4,7 +4,8 @@
 		"strict": true,
 		"baseUrl": "./",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"react-native/View": ["@/components/ui/Text"]
 		},
 		"resolveJsonModule": true,
 		"types": ["i18next/i18next.d.ts"]
