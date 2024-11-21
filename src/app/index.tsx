@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { H1 } from "@/components/ui/Heading";
 
 export default function App() {
 	return (
 		<View>
-			<Text>Welcome to React Native</Text>
+			<H1>Welcome to React Native</H1>
 		</View>
 	);
 }
