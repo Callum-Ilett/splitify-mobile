@@ -1,18 +1,23 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts",
-    "nativewind-env.d.ts"
-  ]
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"],
+			"react-native/View": ["@/components/ui/Text"]
+		},
+		"resolveJsonModule": true,
+		"esModuleInterop": true
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"**/*.js",
+		"**/*.tsx",
+		".expo/types/**/*.ts",
+		"expo-env.d.ts",
+		"nativewind-env.d.ts",
+		"env.d.ts"
+	]
 }

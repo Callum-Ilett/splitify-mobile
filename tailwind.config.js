@@ -1,9 +1,20 @@
+const colors = require("./src/theme/colors");
+const fontSize = require("./src/theme/typography");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
+  darkMode: "class",
   theme: {
-    extend: {},
+    fontSize,
+    extend: {
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"]
+      },
+      colors
+    },
+
   },
   plugins: [],
 }
