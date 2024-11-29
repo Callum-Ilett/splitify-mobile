@@ -1,8 +1,8 @@
-import * as React from "react";
+import { Text } from "@/components/ui/Text";
 import { cn } from "@/theme/utils";
 import { Text as SlotText } from "@rn-primitives/slot";
 import { SlottableTextProps, TextRef } from "@rn-primitives/types";
-import { Text } from "@/components/ui/Text";
+import * as React from "react";
 
 const H1 = React.forwardRef<TextRef, SlottableTextProps>(
 	({ className, asChild = false, ...props }, ref) => {
@@ -10,7 +10,7 @@ const H1 = React.forwardRef<TextRef, SlottableTextProps>(
 
 		return (
 			<Component
-				className={cn("text-h1 font-urbanist", className)}
+				className={cn("font-urbanist text-h1 font-bold", className)}
 				role="heading"
 				aria-level="1"
 				ref={ref}
@@ -27,7 +27,7 @@ const H2 = React.forwardRef<TextRef, SlottableTextProps>(
 		const Component = asChild ? SlotText : Text;
 		return (
 			<Component
-				className={cn("text-h2 font-urbanist", className)}
+				className={cn("font-urbanist text-h2 font-bold", className)}
 				role="heading"
 				aria-level="2"
 				ref={ref}
@@ -44,7 +44,7 @@ const H3 = React.forwardRef<TextRef, SlottableTextProps>(
 		const Component = asChild ? SlotText : Text;
 		return (
 			<Component
-				className={cn("font-urbanist text-h3", className)}
+				className={cn("font-urbanist text-h3 font-bold", className)}
 				role="heading"
 				aria-level="3"
 				ref={ref}
@@ -61,7 +61,7 @@ const H4 = React.forwardRef<TextRef, SlottableTextProps>(
 		const Component = asChild ? SlotText : Text;
 		return (
 			<Component
-				className={cn("text-h4 font-urbanist", className)}
+				className={cn("font-urbanist text-h4 font-bold", className)}
 				role="heading"
 				aria-level="4"
 				ref={ref}
@@ -78,7 +78,7 @@ const H5 = React.forwardRef<TextRef, SlottableTextProps>(
 		const Component = asChild ? SlotText : Text;
 		return (
 			<Component
-				className={cn("text-h5 font-urbanist", className)}
+				className={cn("font-urbanist text-h5 font-bold", className)}
 				role="heading"
 				aria-level="4"
 				ref={ref}
@@ -95,7 +95,7 @@ const H6 = React.forwardRef<TextRef, SlottableTextProps>(
 		const Component = asChild ? SlotText : Text;
 		return (
 			<Component
-				className={cn("text-H6 font-urbanist", className)}
+				className={cn("font-urbanist text-h6 font-bold", className)}
 				role="heading"
 				aria-level="4"
 				ref={ref}
