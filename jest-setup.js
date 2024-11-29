@@ -19,3 +19,14 @@ jest.mock("@/components/ui/Heading", () => {
 		H6: (props) => <Text {...props} />
 	};
 });
+
+jest.mock("@/components/ui/Checkbox", () => {
+	const { Pressable } = jest.requireActual("react-native");
+	return {
+		Checkbox: (props) => <Pressable {...props} onPress={() => {
+			props.onCheckedChange?.(!props.value);
+		}}
+		/>
+	};
+});
+
