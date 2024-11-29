@@ -2,6 +2,9 @@ declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
 			NODE_ENV: "development" | "production" | "test";
+			EXPO_PUBLIC_AUTH0_DOMAIN: string;
+			EXPO_PUBLIC_AUTH0_CLIENT_ID: string;
+			EXPO_PUBLIC_2FACTOR_AUTH_FLOW: "email" | "sms";
 		}
 	}
 }
