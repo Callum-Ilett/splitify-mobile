@@ -24,8 +24,8 @@ const VerifyEmailScreen = ({ heading }: VerifyEmailScreenProps) => {
 			await sendEmailCode({ email, send: "code" });
 
 			router.push({ pathname: "/verify-code", params: { email } });
-		} catch {
-			console.error("Error sending Email code");
+		} catch (error) {
+			console.error("Error sending Email code", error);
 		}
 	};
 

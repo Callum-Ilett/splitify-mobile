@@ -36,8 +36,8 @@ const VerifyPhoneNumberScreen = ({ heading }: VerifyPhoneNumberScreenProps) => {
 				pathname: "/verify-code",
 				params: { phoneNumber: formattedPhoneNumber }
 			});
-		} catch {
-			console.error("Error sending SMS code");
+		} catch (error) {
+			console.error("Error sending SMS code", error);
 		}
 	};
 
