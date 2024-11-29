@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { AuthProvider } from "@/providers/AuthProvider";
 import { FontProvider } from "@/providers/FontProvider";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
@@ -10,7 +11,9 @@ type ProvidersProps = {
 const Providers = ({ children }: ProvidersProps) => {
 	return (
 		<FontProvider>
-			<ThemeProvider>{children}</ThemeProvider>
+			<ThemeProvider>
+				<AuthProvider>{children}</AuthProvider>
+			</ThemeProvider>
 		</FontProvider>
 	);
 };

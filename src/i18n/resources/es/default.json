@@ -1,1 +1,39 @@
-{ "Welcome to React Native": "Bienvenido a React Native" }
+{
+	"Let's Get Started!": "¡Empecemos!",
+	"With Splitify, expenses split bills is easier than ever before.": "Con Splitify, dividir facturas de gastos es más fácil que nunca.",
+	"Continue with Google": "Continuar con Google",
+	"Continue with Facebook": "Continuar con Facebook",
+	"Continue with Twitter": "Continuar con Twitter",
+	"Sign up": "Inscribirse",
+	"Log in": "Acceso",
+	"Privacy Policy": "política de privacidad",
+	"Terms of Service": "Condiciones de servicio",
+
+	"Create account 👩‍💻": "Crea una cuenta 👩‍💻",
+	"Please enter your details below.": "Por favor, introduzca sus datos a continuación.",
+	"First Name": "Nombre de pila",
+	"First name is required": "El nombre es obligatorio",
+	"Last Name": "Apellido",
+	"Last name is required": "El apellido es obligatorio",
+	"I agree to Splitify {0}": "Acepto Splitify ",
+	"Terms & Policy.": "Términos y políticas.",
+	"You must agree to the terms & policy": "Debes aceptar los términos y la política",
+	"Already have an account? {0}": "¿Ya tienes una cuenta? ",
+	"Sign in": "Iniciar sesión",
+
+	"Secure your account 🔒": "Protege tu cuenta 🔒",
+	"Enter your phone number below. A SMS will be sent to that number with a OTP code.": "Ingresa tu número de teléfono a continuación. Se enviará un SMS a ese número con un código OTP.",
+	"Phone Number": "Número de teléfono",
+	"Insert your phone number": "Inserta tu número de teléfono",
+	"Continue": "Continuar",
+
+	"Enter your email below. A verification code will be sent to that email.": "Ingresa tu correo electrónico a continuación. Se enviará un código de verificación a ese correo electrónico.",
+	"Email": "Correo electrónico",
+	"Insert your email address": "Introduzca su dirección de correo electrónico",
+
+	"OTP code verification 🔐": "Verificación de código OTP 🔐",
+	"verification.email.otpSent": "Hemos enviado un código OTP a tu correo electrónico <0>{{email}}</0>. Ingresa el código OTP a continuación para verificar.",
+	"verification.sms.otpSent": "Hemos enviado un código OTP a tu número de teléfono <0>{{phoneNumber}}</0>. Ingresa el código OTP a continuación para verificar.",
+	"Didn't receive the code?": "¿No recibiste el código?",
+	"Resend": "Reenviar"
+}

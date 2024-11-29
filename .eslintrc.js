@@ -4,7 +4,10 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json",
   },
-  ignorePatterns: ["/dist/*"],
+  ignorePatterns: [
+    "/dist/*",
+    "*.svg"
+  ],
   rules: {
     "no-restricted-imports": [
       "warn",
@@ -26,6 +29,11 @@ module.exports = {
         "no-restricted-imports": "off"
       },
     },
-  ],
+    {
+      // Test files only
+      files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      extends: ["plugin:testing-library/react"]
+    }
+  ]
 };
 

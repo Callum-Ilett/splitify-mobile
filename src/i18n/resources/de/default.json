@@ -1,1 +1,39 @@
-{ "Welcome to React Native": "Willkommen bei React Native" }
+{
+	"Let's Get Started!": "Lass uns anfangen!",
+	"With Splitify, expenses split bills is easier than ever before.": "Mit Splitify ist das Aufteilen von Ausgabenrechnungen einfacher als je zuvor.",
+	"Continue with Google": "Weiter mit Google",
+	"Continue with Facebook": "Weiter mit Facebook",
+	"Continue with Twitter": "Weiter mit Twitter",
+	"Sign up": "Melden Sie sich an",
+	"Log in": "Einloggen",
+	"Privacy Policy": "Datenschutzrichtlinie",
+	"Terms of Service": "Servicebedingungen",
+
+	"Create account 👩‍💻": "Konto erstellen 👩‍💻",
+	"Please enter your details below.": "Bitte geben Sie nachstehend Ihre Daten ein.",
+	"First Name": "Vorname",
+	"First name is required": "Vorname ist erforderlich",
+	"Last Name": "Nachname",
+	"Last name is required": "Nachname ist erforderlich",
+	"I agree to Splitify {0}": "Ich stimme Splitify zu ",
+	"Terms & Policy.": "Bedingungen und Richtlinien.",
+	"You must agree to the terms & policy": "Sie müssen den Bedingungen und Richtlinien zustimmen",
+	"Already have an account? {0}": "Hast du schon ein Konto? ",
+	"Sign in": "anmelden",
+
+	"Secure your account 🔒": "Sichern Sie Ihr Konto 🔒",
+	"Enter your phone number below. A SMS will be sent to that number with a OTP code.": "Geben Sie unten Ihre Telefonnummer ein. An diese Nummer wird eine SMS mit einem OTP-Code gesendet.",
+	"Phone Number": "Telefonnummer",
+	"Insert your phone number": "Geben Sie Ihre Telefonnummer ein",
+	"Continue": "Weitermachen",
+
+	"Enter your email below. A verification code will be sent to that email.": "Geben Sie unten Ihre E-Mail-Adresse ein. Ein Bestätigungscode wird an diese E-Mail-Adresse gesendet.",
+	"Email": "E-Mail",
+	"Insert your email address": "Geben Sie Ihre E-Mail-Adresse ein",
+
+	"OTP code verification 🔐": "OTP-Code-Verifizierung 🔐",
+	"verification.email.otpSent": "Wir haben einen OTP-Code an Ihre E-Mail-Adresse <0>{{email}}</0> gesendet. Geben Sie zur Bestätigung unten den OTP-Code ein.",
+	"verification.sms.otpSent": "Wir haben einen OTP-Code an Ihre Telefonnummer <0>{{phoneNumber}}</0> gesendet. Geben Sie zur Bestätigung unten den OTP-Code ein.",
+	"Didn't receive the code?": "Code nicht erhalten?",
+	"Resend": "Erneut senden"
+}
