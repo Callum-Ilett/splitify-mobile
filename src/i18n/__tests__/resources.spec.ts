@@ -186,7 +186,6 @@ describe("resources", () => {
 		// Act
 
 		// Assert
-		console.log("resources:", resources);
 		expect(resources).toStrictEqual(translations);
 	});
 });
