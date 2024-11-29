@@ -1,30 +1,48 @@
 import type { TextProps as RNTextProps } from "react-native";
 
-import { forwardRef } from "react";
 import { useTranslation } from "@/i18n/utils";
 import { cn } from "@/theme/utils";
+import { forwardRef } from "react";
 import { Text as RNText } from "react-native";
 
-type TextProps = {} & RNTextProps;
+type TextProps = {
+	i18nKey?: string;
+	skipTranslation?: boolean;
+} & RNTextProps;
 
 const Text = forwardRef<RNText, TextProps>(
-	({ className, children, ...props }, ref) => {
+	({ className, children, i18nKey, skipTranslation, ...props }, ref) => {
 		const { translate, translations } = useTranslation();
 
-		if (typeof children === "string" && !translations.includes(children)) {
+		const content =
+			i18nKey || (typeof children === "string" ? children : undefined);
+
+		if (
+			!skipTranslation &&
+			!i18nKey &&
+			typeof children === "string" &&
+			!translations.includes(children)
+		) {
 			console.warn(
-				"Text component received a i18n key that is not in the translation resources",
+				"Text component received string children that is not in the translation resources",
 				JSON.stringify(children)
 			);
 		}
 
 		return (
 			<RNText
-				className={cn("font-urbanist text-grey-900 dark:text-white", className)}
+				className={cn(
+					"font-urbanist font-normal text-grey-900 dark:text-white",
+					className
+				)}
 				ref={ref}
 				{...props}
 			>
-				{typeof children === "string" ? translate(children) : children}
+				{skipTranslation
+					? content || children
+					: content
+						? translate(content)
+						: children}
 			</RNText>
 		);
 	}
