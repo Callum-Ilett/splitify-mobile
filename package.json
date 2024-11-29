@@ -16,6 +16,9 @@
 		"testMatch": [
 			"<rootDir>/src/**/*.(spec|test).{ts,tsx,js,jsx}"
 		],
+		"setupFilesAfterEnv": [
+			"./jest-setup.js"
+		],
 		"moduleNameMapper": {
 			"^@/(.*)$": "<rootDir>/src/$1",
 			"\\.svg$": "<rootDir>/src/__mocks__/react-native-svg-mock.js"
@@ -26,6 +29,8 @@
 		"collectCoverage": true,
 		"collectCoverageFrom": [
 			"src/**/*.{ts,tsx,js,jsx}",
+			"!src/components/ui/**/*.{ts,tsx,js,jsx}",
+			"!src/theme/**/*.{ts,js}",
 			"!src/providers/**/*.{ts,tsx,js,jsx}",
 			"!**/coverage/**",
 			"!**/node_modules/**",
@@ -37,8 +42,10 @@
 	"dependencies": {
 		"@expo-google-fonts/urbanist": "^0.2.3",
 		"@expo/vector-icons": "^14.0.2",
+		"@hookform/resolvers": "^3.9.1",
 		"@react-navigation/bottom-tabs": "^7.0.0",
 		"@react-navigation/native": "^7.0.0",
+		"@rn-primitives/checkbox": "^1.1.0",
 		"@rn-primitives/slot": "^1.1.0",
 		"@rn-primitives/types": "^1.1.0",
 		"class-variance-authority": "^0.7.0",
@@ -60,6 +67,7 @@
 		"nativewind": "^4.1.23",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
+		"react-hook-form": "^7.53.2",
 		"react-i18next": "^15.1.1",
 		"react-native": "0.76.2",
 		"react-native-auth0": "^3.2.1",
