@@ -1,1 +1,39 @@
-{ "Welcome to React Native": "Welcome to React Native" }
+{
+	"Let's Get Started!": "Let's Get Started!",
+	"With Splitify, expenses split bills is easier than ever before.": "With Splitify, expenses split bills is easier than ever before.",
+	"Continue with Google": "Continue with Google",
+	"Continue with Facebook": "Continue with Facebook",
+	"Continue with Twitter": "Continue with Twitter",
+	"Sign up": "Sign up",
+	"Log in": "Log in",
+	"Privacy Policy": "Privacy Policy",
+	"Terms of Service": "Terms of Service",
+
+	"Create account 👩‍💻": "Create account 👩‍💻",
+	"Please enter your details below.": "Please enter your details below.",
+	"First Name": "First Name",
+	"First name is required": "First name is required",
+	"Last Name": "Last Name",
+	"Last name is required": "Last name is required",
+	"I agree to Splitify {0}": "I agree to Splitify ",
+	"Terms & Policy.": "Terms & Policy.",
+	"You must agree to the terms & policy": "You must agree to the terms & policy",
+	"Already have an account? {0}": "Already have an account? ",
+	"Sign in": "Sign in",
+
+	"Secure your account 🔒": "Secure your account 🔒",
+	"Enter your phone number below. A SMS will be sent to that number with a OTP code.": "Enter your phone number below. A SMS will be sent to that number with a OTP code.",
+	"Phone Number": "Phone Number",
+	"Insert your phone number": "Insert your phone number",
+	"Continue": "Continue",
+
+	"Enter your email below. A verification code will be sent to that email.": "Enter your email below. A verification code will be sent to that email.",
+	"Email": "Email",
+	"Insert your email address": "Insert your email address",
+
+	"OTP code verification 🔐": "OTP code verification 🔐",
+	"verification.email.otpSent": "We have sent an OTP code to your email <0>{{email}}</0>. Enter the OTP code below to verify.",
+	"verification.sms.otpSent": "We have sent an OTP code to your phone number <0>{{phoneNumber}}</0>. Enter the OTP code below to verify.",
+	"Didn't receive the code?": "Didn't receive the code?",
+	"Resend": "Resend"
+}
