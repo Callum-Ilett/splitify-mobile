@@ -17,16 +17,18 @@ export default function RootLayout() {
 				screenOptions={({ navigation }) => ({
 					headerBackButtonDisplayMode: "minimal",
 					headerShadowVisible: false,
-					headerLeft: () => (
-						<Pressable className="ml-2" onPress={() => navigation.goBack()}>
-							<ChevronLeft
-								color={theme === "dark" ? colors.white : colors.grey[900]}
-								size={24}
-							/>
-						</Pressable>
-					)
+					headerLeft: ({ canGoBack }) =>
+						canGoBack && (
+							<Pressable className="ml-2" onPress={() => navigation.goBack()}>
+								<ChevronLeft
+									color={theme === "dark" ? colors.white : colors.grey[900]}
+									size={24}
+								/>
+							</Pressable>
+						)
 				})}
 			>
+				<Stack.Screen name="(app)" options={{ headerShown: false }} />
 				<Stack.Screen name="welcome" options={{ headerShown: false }} />
 				<Stack.Screen name="sign-up" options={{ title: "" }} />
 				<Stack.Screen name="sign-in" options={{ title: "" }} />
