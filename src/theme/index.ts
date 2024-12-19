@@ -25,7 +25,7 @@ export const DarkTheme: Theme = {
 		}
 	},
 	colors: {
-		primary: colors.dark[100],
+		primary: colors.white,
 		background: colors.dark[100],
 		card: colors.dark[100],
 		text: colors.white,
